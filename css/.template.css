@@ -1,0 +1,170 @@
+/* GENERIC */
+body{
+  color: hsla(200, 14%, 20%, 1)}
+a {
+  color: hsla(200, 100%, 50%, 1)}
+a:hover {
+  color: hsla(200, 100%, 40%, 1)}
+
+/* MENU ON LARGE SCREEN */
+@media screen and (min-width: 481px){
+  body>#layout>.menu {
+    background-color: hsla(200, 15%, 22%, 1)}
+  #taskmenu .selected.button:before {
+    color: hsla(200, 100%, 50%, 1)}
+  #taskmenu a.selected {
+    background: hsla(200, 14%, 32%, 1)}
+  #taskmenu a:hover {
+    background: hsla(200, 14%, 32%, 1)}
+  #taskmenu .special-buttons {
+    background-color: hsla(200, 15%, 22%, 1)}}
+
+/* MENU ON SMALL SCREEN */
+@media screen and (max-width: 768px){
+  .toolbar.listing a {
+    color: hsla(200, 14%, 20%, 1)}}
+html.layout-small .popover-header, html.layout-phone .popover-header {
+  background-color: hsla(200, 100%, 26%, 1)}
+
+/* HEADER */
+body>#layout>div>.header {
+  border-bottom: 1px solid hsla(200, 13%, 85%, 1);
+  color: hsla(200, 14%, 20%, 1)}
+.header a.button {
+  color: hsla(200, 14%, 20%, 1)}
+.listing li.selected > div {
+  background-color: hsla(200, 100%, 96%, 1)}
+.listing tbody td, .listing li a {
+  color: hsla(200, 14%, 20%, 1)}
+
+/* RIGHT MENUS */
+html:not(.touch) .listing li>a:focus, html:not(.touch) .listing.focus tbody tr.focused>td:first-child, html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td {
+  border-left: 2px solid hsla(200, 100%, 81%, 1)}
+ul.treelist li.selected>div>a, ul.treelist li.selected>a {
+  background-color: hsla(200, 100%, 96%, 1)}
+.folderlist li.mailbox .unreadcount{
+  background: hsla(200, 100%, 50%, 1)}
+.folderlist li.mailbox.selected .unreadcount {
+  background: hsla(200, 100%, 61%, 1)}
+.messagelist td.subject span.fromto {
+  color: hsla(200, 14%, 45%, 1)}
+.messagelist td.subject span.date {
+  color: hsla(200, 14%, 45%, 1)}
+.quota-widget {
+  color: hsla(200, 14%, 45%, 1)}
+.quota-widget .bar {
+  border: 1px solid hsla(200, 13%, 85%, 1)}
+.quota-widget .count {
+  color: hsla(200, 14%, 45%, 1)}
+.quota-widget .value {
+  background-color: hsla(200, 100%, 61%, 1)}
+#radio .quota-widget .value.buffered {
+  background-color: hsla(200, 93%, 79%, 1)}
+.listing-info {
+  color: hsla(200, 14%, 45%, 1)}
+.listing tbody td a {
+  color: hsla(200, 14%, 20%, 1)}
+.listing li.selected, .listing tr.selected td {
+  background-color: hsla(200, 100%, 96%, 1)}
+.toolbar.pagenav .pagenav-text {
+  color: hsla(200, 14%, 45%, 1)}
+.toolbar.listing a, .toolbar a {
+  color: hsla(200, 14%, 20%, 1)}
+
+/* FORMS */
+.form-control {
+  color: hsla(200, 14%, 20%, 1)}
+.toolbarmenu.listing li:hover.checkbox>label, .toolbarmenu.listing li:hover input.icon-checkbox+label:before, .toolbarmenu.listing li:hover a.active {
+  background-color: hsla(200, 100%, 61%, 1);}
+.listing li > div a.quickview:before {
+  color: hsla(200, 100%, 50%, 1)}
+.form-control:focus {
+  color:hsla(200, 14%, 20%, 1);
+  border-color:hsla(200, 100%, 61%, 1);
+  box-shadow:0 0 0 .2rem hsla(200, 100%, 61%, 0.25)}
+.ui.alert>i.icon {
+  color: hsla(200, 14%, 35%, 1)}
+.ui.alert.boxinformation {
+  background-color: hsla(200, 100%, 61%, 0.15)}
+.ui.alert a:not(.btn) {
+  color: hsla(200, 100%, 61%, 1)}
+.form-control-plaintext {
+  color: hsla(200, 11%, 15%, 1)}
+.input-group-text {
+  color: hsla(200, 14%, 20%, 1);
+  background-color: hsla(200, 12%, 95%, 1)}
+
+/* BUTTONS */
+.btn-primary {
+  background:hsla(200, 100%, 61%, 1);
+  border-color:hsla(200, 100%, 61%, 1)}
+.btn-primary:focus{
+  box-shadow:0 0 0 .2rem hsla(200, 100%, 61%, 0.5)}
+.btn-primary:hover{
+  background: hsla(200, 100%, 56%, 1);
+  border-color: hsla(200, 100%, 54%, 1)}
+.btn-primary.disabled,.btn-primary:disabled{
+  background:hsla(200, 100%, 81%, 1);
+  border-color:hsla(200, 100%, 81%, 1)}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active{
+  background:hsla(200, 100%, 51%, 1);
+  border-color:hsla(200, 100%, 49%, 1)}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus{
+  box-shadow:0 0 0 .2rem hsla(200, 100%, 61%, 0.53)}
+.btn-secondary{
+  background:hsla(200, 14%, 60%, 1);
+  border-color:hsla(200, 14%, 60%, 1)}
+.btn-secondary:focus{
+  box-shadow:0 0 0 .2rem hsla(200, 14%, 60%, 0.5)}
+.btn-secondary:hover{
+  background:hsla(200, 14%, 55%, 1);
+  border-color:hsla(200, 14%, 53%, 1)}
+.btn-secondary.disabled,.btn-secondary:disabled{
+  border-color:hsla(200, 14%, 80%, 1)}
+.btn-secondary:not(:disabled):not(.disabled):active,.btn-secondary:not(:disabled):not(.disabled).active{
+  background:hsla(200, 14%, 50%, 1);
+  border-color:hsla(200, 13%, 48%, 1)}
+.btn-secondary:not(:disabled):not(.disabled):active:focus,.btn-secondary:not(:disabled):not(.disabled).active:focus{
+  box-shadow:0 0 0 .2rem hsla(200, 14%, 60%, 0.53)}
+.floating-action-buttons a.button{
+  background:hsla(200, 100%, 61%, 1);
+  box-shadow:0 0 5px 5px hsla(200, 100%, 96%, 1)}
+
+/* INPUTS */
+.input-group-text input:focus{
+  border-color:hsla(200, 100%, 61%, 1) !important}
+html:not(.touch) .listing li>a:focus,html:not(.touch) .listing.focus tbody tr.focused>td:first-child,html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td{
+  border-left:2px solid hsla(200, 100%, 81%, 1)}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset a.btn-link:focus{
+  background-color:hsla(200, 100%, 61%, 0.5)}
+
+/* RADIO */
+input.icon-checkbox:checked+label:before {
+  color: hsla(200, 100%, 61%, 1) !important}
+input.icon-checkbox+label:before {
+  color: hsla(200, 100%, 61%, 1) !important}
+
+/* SEARCH BAR */
+.searchbar form:before {
+  color: hsla(200, 14%, 45%, 1)}
+.searchbar a.button{
+  color:hsla(200, 14%, 20%, 1)}
+
+/* jQUERY DATEPICKER */
+.ui-datepicker .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default {
+  color: hsla(200, 14%, 20%, 1)}
+.ui-datepicker .ui-state-highlight, .ui-datepicker.ui-widget-content .ui-state-highlight {
+  background: hsla(200, 100%, 91%, 1)}
+.ui-datepicker .ui-state-active, .ui-datepicker.ui-widget-content .ui-state-active {
+  background: hsla(200, 100%, 66%, 1)}
+.calendar-datepicker .ui-datepicker-header {
+  background-color: hsla(200, 12%, 95%, 1);
+  border-top: 1px solid hsla(200, 13%, 85%, 1)}
+
+/* MESSAGE STACK - LOADING */
+#messagestack .loading {
+  background-color: hsla(200, 100%, 96%, 1);
+  border-color: hsla(200, 100%, 61%, 1);
+  color: hsla(200, 100%, 61%, 1)}
+#messagestack .loading>i.icon:before {
+  color: hsla(200, 100%, 61%, 1)}

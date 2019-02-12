@@ -1,0 +1,31 @@
+/* UNIQUE FOR CALENDAR APP */
+/* DATEPICKER */
+body.task-calendar .ui-datepicker-inline .ui-datepicker-activerange {
+  background-color: hsla(200, 100%, 96%, 1)}
+body.task-calendar .ui-datepicker-inline .ui-datepicker-week-col {
+  color: hsla(200, 100%, 66%, 1)}
+
+/* FULL CALENDAR */
+.fc .fc-sat, .fc .fc-sun {
+  background-color: rgba(131, 99, 99, 0.15)}
+.fc .fc-state-highlight {
+  background: hsla(0, 100%, 61%, 0.08)}
+.fc .fc-cell-overlay {
+  background: hsla(0, 65%, 84%, 1)}
+.fc .fc-header-center h2 {
+  color: hsla(0, 14%, 45%, 1)}
+.fc .fc-agenda-days .fc-widget-header {
+  color: hsla(0, 14%, 45%, 1)}
+.fc .fc-agenda .fc-agenda-axis {
+  color: hsla(0, 14%, 45%, 1)}
+.fc .fc-timeline {
+  border-top: 2px solid hsla(0, 48%, 49%, 1)}
+.fc .fc-widget-header, .fc .fc-widget-content {
+  border: 1px solid hsla(0, 13%, 85%, 1)}
+.fc .fc-event {
+  border: 1px solid hsla(0, 50%, 45%, 1);
+  background-color: hsla(0, 50%, 45%, 1)}
+.fc .fc-day-header {
+  color: hsla(0, 14%, 45%, 1)}
+.header a.button {
+  color: hsla(0, 14%, 20%, 1)}

@@ -1,0 +1,202 @@
+/* GENERIC */
+body{
+  color: #3a2b2b}
+a {
+  color: #ff0000}
+a:hover {
+  color: #cc0000}
+
+/* MENU ON LARGE SCREEN */
+@media screen and (min-width: 481px){
+  body>#layout>.menu {
+    background-color: #402f2f}
+  #taskmenu .selected.button:before {
+    color: #ff0000}
+  #taskmenu a.selected {
+    background: #5d4646}
+  #taskmenu a:hover {
+    background: #5d4646}
+  #taskmenu .special-buttons {
+    background-color: #402f2f}}
+
+/* MENU ON SMALL SCREEN */
+@media screen and (max-width: 768px){
+  .toolbar.listing a {
+    color: #3a2b2b}}
+html.layout-small .popover-header, html.layout-phone .popover-header {
+  background-color: #840000}
+
+/* HEADER */
+body>#layout>div>.header {
+  border-bottom: 1px solid #ddd3d3;
+  color: #3a2b2b}
+.header a.button {
+  color: #3a2b2b}
+.listing li.selected > div {
+  background-color: #ffeaea}
+.listing tbody td, .listing li a {
+  color: #3a2b2b}
+
+/* RIGHT MENUS */
+html:not(.touch) .listing li>a:focus, html:not(.touch) .listing.focus tbody tr.focused>td:first-child, html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td {
+  border-left: 2px solid #ff9e9e}
+ul.treelist li.selected>div>a, ul.treelist li.selected>a {
+  background-color: #ffeaea}
+.folderlist li.mailbox .unreadcount{
+  background: #ff0000}
+.folderlist li.mailbox.selected .unreadcount {
+  background: #fe3838}
+.messagelist td.subject span.fromto {
+  color: #826262}
+.messagelist td.subject span.date {
+  color: #826262}
+.quota-widget {
+  color: #826262}
+.quota-widget .bar {
+  border: 1px solid #ddd3d3}
+.quota-widget .count {
+  color: #826262}
+.quota-widget .value {
+  background-color: #fe3838}
+#radio .quota-widget .value.buffered {
+  background-color: #fb9797}
+.listing-info {
+  color: #826262}
+.listing tbody td a {
+  color: #3a2b2b}
+.listing li.selected, .listing tr.selected td {
+  background-color: #ffeaea}
+.toolbar.pagenav .pagenav-text {
+  color: #826262}
+.toolbar.listing a, .toolbar a {
+  color: #3a2b2b}
+
+/* FORMS */
+.form-control {
+  color: #3a2b2b}
+.toolbarmenu.listing li:hover.checkbox>label, .toolbarmenu.listing li:hover input.icon-checkbox+label:before, .toolbarmenu.listing li:hover a.active {
+  background-color: #fe3838;}
+.listing li > div a.quickview:before {
+  color: #ff0000}
+.form-control:focus {
+  color:#3a2b2b;
+  border-color:#fe3838;
+  box-shadow:0 0 0 .2rem rgba(255, 56, 56, 0.25)}
+.ui.alert>i.icon {
+  color: #654c4c}
+.ui.alert.boxinformation {
+  background-color: rgba(255, 56, 56, 0.15)}
+.ui.alert a:not(.btn) {
+  color: #fe3838}
+.form-control-plaintext {
+  color: #2a2222}
+.input-group-text {
+  color: #3a2b2b;
+  background-color: #f3f0f0}
+
+/* BUTTONS */
+.btn-primary {
+  background:#fe3838;
+  border-color:#fe3838}
+.btn-primary:focus{
+  box-shadow:0 0 0 .2rem rgba(255, 56, 56, 0.5)}
+.btn-primary:hover{
+  background: #ff1e1e;
+  border-color: #ff1414}
+.btn-primary.disabled,.btn-primary:disabled{
+  background:#ff9e9e;
+  border-color:#ff9e9e}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active{
+  background:#ff0505;
+  border-color:#f90000}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus{
+  box-shadow:0 0 0 .2rem rgba(255, 56, 56, 0.53)}
+.btn-secondary{
+  background:#a78a8a;
+  border-color:#a78a8a}
+.btn-secondary:focus{
+  box-shadow:0 0 0 .2rem rgba(167, 139, 139, 0.5)}
+.btn-secondary:hover{
+  background:#9c7c7c;
+  border-color:#977676}
+.btn-secondary.disabled,.btn-secondary:disabled{
+  border-color:#d3c4c4}
+.btn-secondary:not(:disabled):not(.disabled):active,.btn-secondary:not(:disabled):not(.disabled).active{
+  background:#916d6d;
+  border-color:#8a6a6a}
+.btn-secondary:not(:disabled):not(.disabled):active:focus,.btn-secondary:not(:disabled):not(.disabled).active:focus{
+  box-shadow:0 0 0 .2rem rgba(167, 139, 139, 0.53)}
+.floating-action-buttons a.button{
+  background:#fe3838;
+  box-shadow:0 0 5px 5px #ffeaea}
+
+/* INPUTS */
+.input-group-text input:focus{
+  border-color:#fe3838 !important}
+html:not(.touch) .listing li>a:focus,html:not(.touch) .listing.focus tbody tr.focused>td:first-child,html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td{
+  border-left:2px solid #ff9e9e}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset a.btn-link:focus{
+  background-color:rgba(255, 56, 56, 0.5)}
+
+/* RADIO */
+input.icon-checkbox:checked+label:before {
+  color: #fe3838 !important}
+input.icon-checkbox+label:before {
+  color: #fe3838 !important}
+
+/* SEARCH BAR */
+.searchbar form:before {
+  color: #826262}
+.searchbar a.button{
+  color:#3a2b2b}
+
+/* jQUERY DATEPICKER */
+.ui-datepicker .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default {
+  color: #3a2b2b}
+.ui-datepicker .ui-state-highlight, .ui-datepicker.ui-widget-content .ui-state-highlight {
+  background: #ffd1d1}
+.ui-datepicker .ui-state-active, .ui-datepicker.ui-widget-content .ui-state-active {
+  background: #ff5151}
+.calendar-datepicker .ui-datepicker-header {
+  background-color: #f3f0f0;
+  border-top: 1px solid #ddd3d3}
+
+/* MESSAGE STACK - LOADING */
+#messagestack .loading {
+  background-color: #ffeaea;
+  border-color: #fe3838;
+  color: #fe3838}
+#messagestack .loading>i.icon:before {
+  color: #fe3838}
+
+/* UNIQUE FOR CALENDAR APP */
+/* DATEPICKER */
+body.task-calendar .ui-datepicker-inline .ui-datepicker-activerange {
+  background-color: #ffeaea}
+body.task-calendar .ui-datepicker-inline .ui-datepicker-week-col {
+  color: #ff5151}
+
+/* FULL CALENDAR */
+.fc .fc-sat, .fc .fc-sun {
+  background-color: rgba(131, 99, 99, 0.15)}
+.fc .fc-state-highlight {
+  background: rgba(255, 56, 56, 0.08)}
+.fc .fc-cell-overlay {
+  background: #f0bbbb}
+.fc .fc-header-center h2 {
+  color: #826262}
+.fc .fc-agenda-days .fc-widget-header {
+  color: #826262}
+.fc .fc-agenda .fc-agenda-axis {
+  color: #826262}
+.fc .fc-timeline {
+  border-top: 2px solid #b84040}
+.fc .fc-widget-header, .fc .fc-widget-content {
+  border: 1px solid #ddd3d3}
+.fc .fc-event {
+  border: 1px solid #ac3939;
+  background-color: #ac3939}
+.fc .fc-day-header {
+  color: #826262}
+.header a.button {
+  color: #3a2b2b}

@@ -1,0 +1,170 @@
+/* GENERIC */
+body{
+  color: #2b353a}
+a {
+  color: #00a9ff}
+a:hover {
+  color: #0087cc}
+
+/* MENU ON LARGE SCREEN */
+@media screen and (min-width: 481px){
+  body>#layout>.menu {
+    background-color: #2f3a40}
+  #taskmenu .selected.button:before {
+    color: #00a9ff}
+  #taskmenu a.selected {
+    background: #46555d}
+  #taskmenu a:hover {
+    background: #46555d}
+  #taskmenu .special-buttons {
+    background-color: #2f3a40}}
+
+/* MENU ON SMALL SCREEN */
+@media screen and (max-width: 768px){
+  .toolbar.listing a {
+    color: #2b353a}}
+html.layout-small .popover-header, html.layout-phone .popover-header {
+  background-color: #005884}
+
+/* HEADER */
+body>#layout>div>.header {
+  border-bottom: 1px solid #d3dadd;
+  color: #2b353a}
+.header a.button {
+  color: #2b353a}
+.listing li.selected > div {
+  background-color: #eaf8ff}
+.listing tbody td, .listing li a {
+  color: #2b353a}
+
+/* RIGHT MENUS */
+html:not(.touch) .listing li>a:focus, html:not(.touch) .listing.focus tbody tr.focused>td:first-child, html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td {
+  border-left: 2px solid #9edeff}
+ul.treelist li.selected>div>a, ul.treelist li.selected>a {
+  background-color: #eaf8ff}
+.folderlist li.mailbox .unreadcount{
+  background: #00a9ff}
+.folderlist li.mailbox.selected .unreadcount {
+  background: #38bcfe}
+.messagelist td.subject span.fromto {
+  color: #627882}
+.messagelist td.subject span.date {
+  color: #627882}
+.quota-widget {
+  color: #627882}
+.quota-widget .bar {
+  border: 1px solid #d3dadd}
+.quota-widget .count {
+  color: #627882}
+.quota-widget .value {
+  background-color: #38bcfe}
+#radio .quota-widget .value.buffered {
+  background-color: #97dafb}
+.listing-info {
+  color: #627882}
+.listing tbody td a {
+  color: #2b353a}
+.listing li.selected, .listing tr.selected td {
+  background-color: #eaf8ff}
+.toolbar.pagenav .pagenav-text {
+  color: #627882}
+.toolbar.listing a, .toolbar a {
+  color: #2b353a}
+
+/* FORMS */
+.form-control {
+  color: #2b353a}
+.toolbarmenu.listing li:hover.checkbox>label, .toolbarmenu.listing li:hover input.icon-checkbox+label:before, .toolbarmenu.listing li:hover a.active {
+  background-color: #38bcfe;}
+.listing li > div a.quickview:before {
+  color: #00a9ff}
+.form-control:focus {
+  color:#2b353a;
+  border-color:#38bcfe;
+  box-shadow:0 0 0 .2rem rgba(56, 189, 255, 0.25)}
+.ui.alert>i.icon {
+  color: #4c5d65}
+.ui.alert.boxinformation {
+  background-color: rgba(56, 189, 255, 0.15)}
+.ui.alert a:not(.btn) {
+  color: #38bcfe}
+.form-control-plaintext {
+  color: #22272a}
+.input-group-text {
+  color: #2b353a;
+  background-color: #f0f2f3}
+
+/* BUTTONS */
+.btn-primary {
+  background:#38bcfe;
+  border-color:#38bcfe}
+.btn-primary:focus{
+  box-shadow:0 0 0 .2rem rgba(56, 189, 255, 0.5)}
+.btn-primary:hover{
+  background: #1eb4ff;
+  border-color: #14b0ff}
+.btn-primary.disabled,.btn-primary:disabled{
+  background:#9edeff;
+  border-color:#9edeff}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active{
+  background:#05abff;
+  border-color:#00a6f9}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus{
+  box-shadow:0 0 0 .2rem rgba(56, 189, 255, 0.53)}
+.btn-secondary{
+  background:#8a9da7;
+  border-color:#8a9da7}
+.btn-secondary:focus{
+  box-shadow:0 0 0 .2rem rgba(139, 158, 167, 0.5)}
+.btn-secondary:hover{
+  background:#7c919c;
+  border-color:#768c97}
+.btn-secondary.disabled,.btn-secondary:disabled{
+  border-color:#c4ced3}
+.btn-secondary:not(:disabled):not(.disabled):active,.btn-secondary:not(:disabled):not(.disabled).active{
+  background:#6d8591;
+  border-color:#6a7f8a}
+.btn-secondary:not(:disabled):not(.disabled):active:focus,.btn-secondary:not(:disabled):not(.disabled).active:focus{
+  box-shadow:0 0 0 .2rem rgba(139, 158, 167, 0.53)}
+.floating-action-buttons a.button{
+  background:#38bcfe;
+  box-shadow:0 0 5px 5px #eaf8ff}
+
+/* INPUTS */
+.input-group-text input:focus{
+  border-color:#38bcfe !important}
+html:not(.touch) .listing li>a:focus,html:not(.touch) .listing.focus tbody tr.focused>td:first-child,html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td{
+  border-left:2px solid #9edeff}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset a.btn-link:focus{
+  background-color:rgba(56, 189, 255, 0.5)}
+
+/* RADIO */
+input.icon-checkbox:checked+label:before {
+  color: #38bcfe !important}
+input.icon-checkbox+label:before {
+  color: #38bcfe !important}
+
+/* SEARCH BAR */
+.searchbar form:before {
+  color: #627882}
+.searchbar a.button{
+  color:#2b353a}
+
+/* jQUERY DATEPICKER */
+.ui-datepicker .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default {
+  color: #2b353a}
+.ui-datepicker .ui-state-highlight, .ui-datepicker.ui-widget-content .ui-state-highlight {
+  background: #d1efff}
+.ui-datepicker .ui-state-active, .ui-datepicker.ui-widget-content .ui-state-active {
+  background: #51c5ff}
+.calendar-datepicker .ui-datepicker-header {
+  background-color: #f0f2f3;
+  border-top: 1px solid #d3dadd}
+
+/* MESSAGE STACK - LOADING */
+#messagestack .loading {
+  background-color: #eaf8ff;
+  border-color: #38bcfe;
+  color: #38bcfe}
+#messagestack .loading>i.icon:before {
+  color: #38bcfe}
