@@ -52,8 +52,8 @@
 
     // Scale canvas elements based on favicon size
     multiplier = img.width / 16;
-    fontSize   = multiplier * 11;
-    xOffset    = multiplier;
+    fontSize   = multiplier * 10;
+    xOffset    = multiplier + 18;
     yOffset    = multiplier * 12;
     border     = multiplier;
     shadow     = multiplier * 2;
@@ -105,6 +105,7 @@
  * calendar.js v1.0.0
  * http://github.com/gloony
  * Dynamically updates the favicon with the current day of the month.
+ * Display Hour on title.
  *
  * Copyright 2019, David Chardonnens
  * Released under the MIT license
@@ -120,3 +121,18 @@ function setDate() {
   }, 1800000);
 }
 setDate();
+
+setTimeout(function(){ rcube_calendar_time(); }, 1000);
+function rcube_calendar_time(){
+  var date = new Date();
+  var sdate = '', shours = '', sminutes = '', sseconds = '';
+  if(date.getHours()<10) shours = '0' + date.getHours();
+  else shours = date.getHours();
+  if(date.getMinutes()<10) sminutes = '0' + date.getMinutes();
+  else sminutes = date.getMinutes();
+  if(date.getSeconds()<10) sseconds = '0' + date.getSeconds();
+  else sseconds = date.getSeconds();
+  sdate = shours + ':' + sminutes + ':' + sseconds;
+  $('#aria-label-calendars').html(rcmail.gettext('calendars','calendar') + ' ' + sdate);
+  setTimeout(function(){ rcube_calendar_time(); }, 1000);
+}
