@@ -8,16 +8,28 @@ a:hover {
 
 /* MENU ON LARGE SCREEN */
 @media screen and (min-width: 481px){
-  body>#layout>.menu {
+  body>#layout-menu>.menu {
     background-color: hsla(200, 15%, 22%, 1)}
-  #taskmenu .selected.button:before {
+  #layout-menu .selected.button:before {
     color: hsla(200, 100%, 50%, 1)}
-  #taskmenu a.selected {
+  #layout-menu a.selected {
     background: hsla(200, 14%, 32%, 1)}
-  #taskmenu a:hover {
+  #layout-menu a:hover {
     background: hsla(200, 14%, 32%, 1)}
-  #taskmenu .special-buttons {
+  #layout-menu a.selected:hover {
+    background: hsla(200, 14%, 32%, 1)}
+  #layout-menu a.button.compose:hover {
+    background: hsla(200, 14%, 32%, 1) !important}
+  #layout-menu .special-buttons {
     background-color: hsla(200, 15%, 22%, 1)}}
+
+/* MENU ON SMALL SCREEN */
+@media screen and (max-width: 480px){
+  #layout-menu .selected{
+    background-color: hsla(200, 21%, 85%, 1)}}
+@media screen and (min-width: 481px){
+#layout-menu {
+    background-color: hsla(200, 15%, 22%, 1)}
 
 /* MENU ON SMALL SCREEN */
 @media screen and (max-width: 768px){
@@ -41,7 +53,7 @@ body>#layout>div>.header {
 html:not(.touch) .listing li>a:focus, html:not(.touch) .listing.focus tbody tr.focused>td:first-child, html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused>td.selection+td {
   border-left: 2px solid hsla(200, 100%, 81%, 1)}
 ul.treelist li.selected>div>a, ul.treelist li.selected>a {
-  background-color: hsla(200, 100%, 96%, 1)}
+  background-color: hsla(200, 100%, 96%, 0.44)}
 .folderlist li.mailbox .unreadcount{
   background: hsla(200, 100%, 50%, 1)}
 .folderlist li.mailbox.selected .unreadcount {
@@ -49,6 +61,8 @@ ul.treelist li.selected>div>a, ul.treelist li.selected>a {
 .messagelist td.subject span.fromto {
   color: hsla(200, 14%, 45%, 1)}
 .messagelist td.subject span.date {
+  color: hsla(200, 14%, 45%, 1)}
+.footer.toolbar.small{
   color: hsla(200, 14%, 45%, 1)}
 .quota-widget {
   color: hsla(200, 14%, 45%, 1)}
@@ -65,7 +79,7 @@ ul.treelist li.selected>div>a, ul.treelist li.selected>a {
 .listing tbody td a {
   color: hsla(200, 14%, 20%, 1)}
 .listing li.selected, .listing tr.selected td {
-  background-color: hsla(200, 100%, 96%, 1)}
+  background-color: hsla(200, 100%, 96%, 0.44)}
 .toolbar.pagenav .pagenav-text {
   color: hsla(200, 14%, 45%, 1)}
 .toolbar.listing a, .toolbar a {
@@ -139,10 +153,22 @@ html:not(.touch) .listing li>a:focus,html:not(.touch) .listing.focus tbody tr.fo
   background-color:hsla(200, 100%, 61%, 0.5)}
 
 /* RADIO */
+.custom-switch .custom-control-input:checked~.custom-control-label::before {
+  border-color: hsla(200, 100%, 61%, 1) !important;
+  background-color: hsla(200, 100%, 61%, 1) !important}
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: hsla(200, 100%, 61%, 1) !important;
+  background-color: hsla(200, 100%, 61%, 1) !important}
+}
 input.icon-checkbox:checked+label:before {
   color: hsla(200, 100%, 61%, 1) !important}
 input.icon-checkbox+label:before {
   color: hsla(200, 100%, 61%, 1) !important}
+.custom-switch .custom-control-input:focus~.custom-control-label:before {
+  box-shadow: 0 0 0 .2rem hsla(200, 100%, 61%, 0.25)}
+.input-group-text input:focus {
+  border-color: hsla(200, 100%, 61%, 0.25) !important}
 
 /* SEARCH BAR */
 .searchbar form:before {
@@ -154,7 +180,7 @@ input.icon-checkbox+label:before {
 .ui-datepicker .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default {
   color: hsla(200, 14%, 20%, 1)}
 .ui-datepicker .ui-state-highlight, .ui-datepicker.ui-widget-content .ui-state-highlight {
-  background: hsla(200, 100%, 91%, 1)}
+  background: hsla(200, 100%, 66%, 0.44)}
 .ui-datepicker .ui-state-active, .ui-datepicker.ui-widget-content .ui-state-active {
   background: hsla(200, 100%, 66%, 1)}
 .calendar-datepicker .ui-datepicker-header {
