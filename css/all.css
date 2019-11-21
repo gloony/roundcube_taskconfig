@@ -1,0 +1,64 @@
+#layout-list, #layout-sidebar, #layout-sidebar, #layout-content{
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0.98}
+#layout-content{
+  background-color: transparent}
+body>#layout>div.content{
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0.96}
+body.formcontainer, html.iframe body{
+  background: rgba(255, 255, 255, 0.9)}
+#messagestack{
+  opacity: 0.92}
+#layout-content .iframe-wrapper {
+    opacity: 0.98}
+
+/* body{
+  background: url(../background/default.png);
+  background-repeat: no-repeat;
+  background-size: cover} */
+
+/* MOD for menu */
+@media screen and (min-width: 481px){
+	#taskmenu a.logout {
+		color: #ff5552 !important}}
+.special-buttons .about{
+	display: none !important}
+@media screen and (min-width: 481px){
+	#layout-menu .popover-header img{
+		display:none}
+	#layout-menu .popover-header{
+		width:0;
+		height:0 !important;
+		min-height:0 !important}}
+@media screen and (max-width: 480px){
+	#taskmenu .about {
+		display: none !important}}
+@media screen and (min-width: 1025px){
+	#layout-menu{
+		width:2.3rem !important}
+	#layout-menu a{
+		width: 2.2rem;
+		height:initial}
+	#layout-menu a .inner{
+		display:none}}
+/* MOD for color menu */
+@media screen and (min-width: 481px){
+	#taskmenu .action-buttons a{
+		color:#80ff00}
+	#taskmenu .action-buttons a:hover{
+		color:#c5ff89}
+	#taskmenu .button-calendar[data-badge]:after {
+		margin-left: -0.08rem;
+		margin-top: 0.64rem;
+		position: absolute;
+		font-size: .8em;
+		content: attr(data-badge);
+		color: #e42c2c;
+		text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+		width: 2.4rem;
+		height: 14px;
+		left: 0;
+		text-align: center}
+	#taskmenu .button-calendar.selected[data-badge]:after {
+		color: white}}
