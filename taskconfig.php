@@ -15,8 +15,14 @@ class taskconfig extends rcube_plugin
     if(file_exists(__DIR__.'/css/'.$this->rcmail->task.'.css')){
       $this->include_stylesheet('css/'.$this->rcmail->task.'.css');
     }
+    if(file_exists(__DIR__.'/css/all.css')){
+      $this->include_stylesheet('css/all.css');
+    }
     if(file_exists(__DIR__.'/js/'.$this->rcmail->task.'.js')){
       $this->include_script('js/'.$this->rcmail->task.'.js');
+    }
+    if(file_exists(__DIR__.'/js/all.js')){
+      $this->include_script('js/all.js');
     }
   }
 
